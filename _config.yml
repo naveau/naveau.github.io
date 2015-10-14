@@ -4,7 +4,7 @@ exclude: ["README.md"]
 timezone: "Europe/Paris"
 
 # Serve command options
-url: "http://localhost:4000"
+url: "http://naveau.github.io"
 baseurl: ""
 
 # Front Matter defaults
