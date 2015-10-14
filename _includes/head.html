@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{{ site.baseurl}}/assets/stylesheets/style.css" />
+
+  <!-- Compatibilité html5/IE -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  {% if page.title %}
+    <title>{{ page.title }}</title>
+  {% else %}
+    <title>Mikaël Naveau</title>
+  {% endif %}
+</head>

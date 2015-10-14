@@ -1,0 +1,8 @@
+- name: Home
+  url: "/"
+
+- name: Academic
+  url: "/academic/"
+
+- name: Contact
+  url: "/contact/"

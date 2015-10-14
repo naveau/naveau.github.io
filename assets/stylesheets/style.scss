@@ -1,0 +1,41 @@
+---
+---
+
+@import "bootstrap";
+
+
+.navbar-mikael {
+  .container-fluid {
+    .navbar-header {
+      .navbar-brand {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+    #main-menu {
+      ul {
+        li a {
+          background-color: #fff;
+        }
+        li.active a {
+          background-color: #eee;
+        }
+        li a:hover {
+          background: #ddd;
+        }
+      }
+    }
+  }
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: -webkit-flex; /* For Safari */
+  -webkit-justify-content: center; /* For Safari */
+  -webkit-align-items: center; /* For Safari */
+}

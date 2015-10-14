@@ -1,0 +1,28 @@
+{% assign page_url = page.url | remove: site.baseurl %}
+
+<nav class="navbar navbar-mikael">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">Menu</button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <img alt="Mikaël avatar" src="{{ site.baseurl }}/assets/images/me.png"/>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-menu">
+      <ul class="nav navbar-nav">
+        {% for item in site.data.navigation %}
+          {% if page_url == item.url %}
+          <li class="active">
+          {% else %}
+          <li>
+          {% endif %}
+            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

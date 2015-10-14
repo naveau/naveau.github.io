@@ -1,0 +1,36 @@
+# Global configuration
+safe: True
+exclude: ["README.md"]
+timezone: "Europe/Paris"
+
+# Serve command options
+url: "http://localhost:4000"
+baseurl: ""
+
+# Front Matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "base"
+      lang: "en"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Mikaël Naveau"
+      permalink: /:day-:month-:year/:title
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"      
+
+# sass
+sass:
+  sass_dir: assets/stylesheets
+
+

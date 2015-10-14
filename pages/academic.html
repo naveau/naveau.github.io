@@ -1,0 +1,24 @@
+---
+title: Academic - Mikaël Naveau
+permalink: "/academic/"
+---
+
+<h1>Publications</h1>
+
+{% assign sorted_pubs = (site.data.publications | sort: 'Publication Year' | reverse) %}
+
+<h2>Journal article</h2>
+
+{% assign pubs = sorted_pubs | where:"Item Type","journalArticle" %}
+{% include pub_list.html pubs=pubs %}
+
+<h2>Book chapter</h2>
+
+{% assign pubs = sorted_pubs | where:"Item Type","bookSection" %}
+{% include pub_list.html pubs=pubs %}
+
+<h2>Conference</h2>
+
+{% assign pubs = sorted_pubs | where:"Item Type","conferencePaper" %}
+{% include pub_list.html pubs=pubs %}
+
